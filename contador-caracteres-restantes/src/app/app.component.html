@@ -1,0 +1,10 @@
+<div class="form-group">
+  <div class="w-50 p-auto d-flex justify-content-start">
+    <form [formGroup]="formDescricao">
+      <label for="">Descrição:</label>
+      <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+      formControlName="descricao" [(ngModel)]="text" maxlength="80"></textarea>
+      <label for="">{{totalCaracteres - text.length}} carecteres restante </label>
+    </form>
+  </div>
+</div>
